@@ -51,10 +51,12 @@ Click `Create` in the Backstage sidebar and select [`Spring Boot Service`](https
 
 ### Build application
 
+1. Go to your GitHub repository - there should be a link to it in backstage. Your repository needs an appropriate topic added in order for Jenkins to find it when it scans GitHub. Since your repository is called labs-yourGitHubUsername, you need to add the topic `jenkins-cft-j-z`
+
 1. Log in to Sandbox Jenkins and select [HMCTS - Labs](https://sandbox-build.platform.hmcts.net/job/HMCTS_Sandbox_LABS/) folder. Check if your repository is there, if it's not then scan the organization by clicking on `Scan Organization Now`.
 The new repository should be listed under repositories after the scan finishes.
 Logs can be monitored under `Scan Organization Log`.
-Any GitHub repository that starts with `labs-*` will be listed as part of this scan.
+Any GitHub repository that starts with `labs-*` and has the `jenkins-cft-j-z` topic will be listed as part of this scan.
 
 1. Click on your repository name.
 

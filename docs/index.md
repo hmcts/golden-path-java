@@ -86,7 +86,7 @@ If you have a permissions issue then ask in [#golden-path](https://hmcts-reform.
 
 ### Deploy application
 
-We use [GitOps](https://www.weave.works/technologies/gitops/) for application deployment to Kubernetes.
+We use [GitOps](https://fluxcd.io/flux/concepts/#gitops) for application deployment to Kubernetes.
 
 Your application will be deployed in `labs` Kubernetes namespace which has already been created.
 

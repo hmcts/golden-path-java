@@ -48,11 +48,12 @@ Click `Create` in the Backstage sidebar and select [`Spring Boot Service`](https
   - Owner:                         `hmcts`
 
   - Repository:                    `labs-YourGithubUsername`
+ 
+
+> **Attention:** Before your repository will appear in Jenkins, it must be added to the [Jenkins deployment controls allowlist](https://hmcts.github.io/cloud-native-platform/onboarding/team/jenkins.html). Follow the onboarding steps there to raise a pull request adding your repository to [`deployment-controls.yml`](https://github.com/hmcts/cnp-jenkins-config/blob/master/deployment-controls.yml). Ensure your repository URL entry ends in .git otherwise Jenkins will not pick it up.
 
 ### Build application
-
-> **Note:** Before your repository will appear in Jenkins, it must be added to the [Jenkins deployment controls allowlist](https://hmcts.github.io/cloud-native-platform/onboarding/team/jenkins.html). Follow the onboarding steps there to raise a pull request adding your repository to `deployment-controls.yml`.
-
+> **Note:** Use only the Sandbox Jenkins instance. The pipeline may contain links to the Build Jenkins environment, but these should be ignored. Use Sandbox Jenkins only.
 1. Log in to Sandbox Jenkins and select [HMCTS - J to Z](https://sandbox-build.platform.hmcts.net/job/HMCTS_j_to_z_Sandbox/) folder. Check if your repository is there, if it's not then scan the organization by clicking on `Scan Organization Now`.
 The new repository should be listed under repositories after the scan finishes.
 Logs can be monitored under `Scan Organization Log`.
@@ -156,6 +157,8 @@ The chart is in the `charts/$app-name` folder.
 1. Run the Jenkins pipeline against the `master` branch (this will trigger automatically on the production Jenkins instance).
 
 1. Reload your application in your browser and check it now shows your favourite fruit.
+
+> **Note:** To access your app you must be off the global protect VPN and instead only using the F5 VPN.
 
 ## Feedback
 

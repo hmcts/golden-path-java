@@ -55,7 +55,7 @@ Click `Create` in the Backstage sidebar and select [`Spring Boot Service`](https
 ### Build application
 > **Note:** Use only the Sandbox Jenkins instance. The pipeline may contain links to the Build Jenkins environment, but these should be ignored. Use Sandbox Jenkins only.
 1. Log in to Sandbox Jenkins and select [HMCTS - J to Z](https://sandbox-build.platform.hmcts.net/job/HMCTS_j_to_z_Sandbox/) folder. Check if your repository is there, if it's not then scan the organization by clicking on `Scan Organization Now`.
-The new repository should be listed under repositories after the scan finishes.
+The new repository should be listed under repositories after the scan finishes. If your repository hasn't been listed after the scan, try running the ['Seed Job'](https://sandbox-build.hmcts.net/job/Seed%20Job/).
 Logs can be monitored under `Scan Organization Log`.
 
 1. Click on your repository name.

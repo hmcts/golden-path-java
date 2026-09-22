@@ -6,6 +6,10 @@ An application will be generated from a template and deployed to a Kubernetes cl
 
 At the end of this tutorial, you will be able to access your application via the HMCTS VPN and will have made changes to it.
 
+## Workflow
+
+![Workflow](./images/AKS-Cluster-workflow.png)
+
 ## Prerequisites
 
 Before starting this tutorial, make sure you have:
